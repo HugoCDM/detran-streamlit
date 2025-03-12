@@ -11,6 +11,7 @@ for file in files:
     if file.endswith('.csv'):
         detran_anos.append(file.replace(
             'datatran', '').replace('.csv', ''))
+        detran_anos = detran_anos.sort()
 
 
 st.set_page_config(layout='wide')
