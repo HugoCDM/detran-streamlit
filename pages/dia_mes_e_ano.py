@@ -79,7 +79,6 @@ def maior_menor_graficos(ano, ascending, maior_menor):
     formatar_graficos(acidentes_no_dia_da_semana_bar, 'Dia da semana')
     con1.plotly_chart(acidentes_no_dia_da_semana_bar)
 
-    # 10 dias que mais ocorreram acidentes no ano
     acidentes_pela_data_completa = df['data_inversa'].value_counts(
     ).reset_index(name='qtd').sort_values(by='qtd', ascending=ascending).iloc[:7]
 
@@ -88,7 +87,6 @@ def maior_menor_graficos(ano, ascending, maior_menor):
     formatar_graficos(acidentes_pela_data_completa_bar, 'Data')
     con2.plotly_chart(acidentes_pela_data_completa_bar)
 
-    # 7 horários que mais ocorrem acidentes
     df['horario'] = df['horario'].str[0:2]
     acidentes_pelo_horario = df.groupby('horario').size(
     ).reset_index(name='qtd')
