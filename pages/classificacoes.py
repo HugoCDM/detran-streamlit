@@ -26,7 +26,7 @@ for file in files:
             'datatran', '').replace('.csv', ''))
 detran_anos = sorted(detran_anos)
 
-st.set_page_config(layout='wide')
+st.set_page_config(layout='wide', page_title="Classificações")
 st.markdown('''
 <style>
 
