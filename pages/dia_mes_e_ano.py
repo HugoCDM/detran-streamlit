@@ -28,7 +28,8 @@ for file in files:
 detran_anos = sorted(detran_anos)
 
 
-st.set_page_config(layout='wide')
+st.set_page_config(layout='wide', page_title="Dia, mês e ano")
+
 col1, col2 = st.columns(2)
 con1 = col1.container(border=True)
 con2 = col2.container(border=True)
