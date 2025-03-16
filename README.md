@@ -1,7 +1,7 @@
 # Detran Dataset Visualizer with Streamlit
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)           ![Streamlit](https://img.shields.io/badge/Streamlit-%23FE4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)
 
-<p>An interactive Streamlit app designed for analyzing Detran's datasets, providing insights into traffic accidents through dynamic visualizations and charts. <a href="https://detran-app.streamlit.app/" target=_blank>Streamlit app link</a></p>
+<p>An interactive Streamlit app designed for analyzing Detran's datasets, providing insights into traffic accidents through dynamic visualizations and charts. <a href="https://detran-app.streamlit.app/" target="_blank">Streamlit app link</a></p>
 
 ![streamlit-1](https://github.com/user-attachments/assets/053c7d08-36a7-4836-9ec9-3d0858f8a75d)
 ![streamlit-4](https://github.com/user-attachments/assets/fd46520c-99d1-4b19-9741-0d01bb01b395)
