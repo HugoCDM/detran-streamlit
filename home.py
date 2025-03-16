@@ -12,7 +12,7 @@ st.markdown("""
             <h5 style="font-family: "Gill Sans", sans-serif;">Conta com um gráfico de barras horizontais apenas para os 20 primeiros municípíos com mais acidentes</h5>
             <br>
             <h4 style="color: rgb(67, 2, 2); font-family: "Gill Sans", sans-serif;">classificacoes: </h4>
-            <h5 style="font-family: "Gill Sans", sans-serif;">São cinco gráficos representando alguns tipos disponíveis de classificação. 2 gráficos de pizza para a classificação dos acidentes, se foi sem ou com vítimas e com o tipo de acidente, por exemplo, uma colisão traseira. 1 gráfico de linha comparando os acidentes com a condição metereológica. 1 gráfico de barra vertical mostrando os tipos de pistas (simples e dupla). E 1 gráfico de treemap, com - até - as 20 causas de acidentes mais comuns.</h5>
+            <h5 style="font-family: "Gill Sans", sans-serif;">São cinco gráficos representando alguns tipos disponíveis de classificação. 2 gráficos de pizza para a classificação dos acidentes, se foi sem ou com vítimas e com o tipo de acidente, por exemplo, uma colisão traseira. 1 gráfico de linha comparando os acidentes com a condição meteorológica. 1 gráfico de barra vertical mostrando os tipos de pistas (simples e dupla). E 1 gráfico de treemap, com - até - as 20 causas de acidentes mais comuns.</h5>
             <br>
             <h4 style="color: rgb(67, 2, 2); font-family: "Gill Sans", sans-serif;">dia mes e ano: </h4>
             <h5 style="font-family: "Gill Sans", sans-serif;">Apresentando 3 gráficos de barras horizontais, para questões como: número de acidentes pelo dia da semana, pelo horário e pela data. Com um botão para filtrar se deseja o menor ou maior número de acidentes.</h5>
