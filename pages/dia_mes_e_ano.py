@@ -67,7 +67,7 @@ def reader(ano):
 
 
 def maior_menor_graficos(ano, ascending, maior_menor):
-    # dia da semana que mais ocorrem acidentes
+
     acidentes_no_dia_da_semana = df['dia_semana'].value_counts(
     ).reset_index(name='qtd').sort_values(by='qtd', ascending=ascending)
 
