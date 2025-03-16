@@ -106,7 +106,7 @@ meteorologia_e_classificacao = meteorologia_e_classificacao.replace(
 meteorologia_e_classificacao = meteorologia_e_classificacao[meteorologia_e_classificacao['classificacao_acidente'].isin(
     ['Com Vítimas Feridas', 'Sem Vítimas', 'Com Vítimas Fatais'])]
 meteorologia_e_classificacao_line = px.line(meteorologia_e_classificacao, x='condicao_metereologica', y='quantidade_acidentes',
-                                            color='classificacao_acidente',  title=f'Gráfico da Condição Metereológica pela Classificação e Quantidade de acidentes - {ano}', height=836)
+                                            color='classificacao_acidente',  title=f'Gráfico da Condição Meteorológica pela Classificação e Quantidade de acidentes - {ano}', height=836)
 meteorologia_e_classificacao_line.update_layout(legend=dict(title=None))
 #
 #
