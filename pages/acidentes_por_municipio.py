@@ -14,7 +14,7 @@ for file in files:
 detran_anos = sorted(detran_anos)
 
 
-st.set_page_config(layout='wide')
+st.set_page_config(layout='wide', page_title="Acidentes por Município")
 con1 = st.container()
 st.markdown('''
 <style>
