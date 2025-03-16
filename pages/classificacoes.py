@@ -59,7 +59,7 @@ def reader(ano):
 
 ano = st.sidebar.selectbox('Selecione o ano', options=detran_anos)
 df = reader(ano)
-# Gráfico de classificação de acidentes
+
 classificacao_por_tipo_acidente_colunas = df['classificacao_acidente'].value_counts(
 ).reset_index(name='qtd')
 classificacao_por_tipo_acidente_colunas = classificacao_por_tipo_acidente_colunas[
@@ -69,7 +69,6 @@ classificacao_por_tipo_acidente_colunas = classificacao_por_tipo_acidente_coluna
 frequencia_classificacao_acidente = px.pie(classificacao_por_tipo_acidente_colunas, names='classificacao_acidente',
                                            values='qtd', title=f"Gráfico de Classificação de acidentes - {ano}", height=400)
 
-# Gráfico de acidentes pelo tipo de pista e horário
 df = df[df['tipo_pista'].isin(['Simples', 'Dupla'])]
 
 df['horario'] = pd.to_datetime(df['horario'], format='%H:%M:%S')
