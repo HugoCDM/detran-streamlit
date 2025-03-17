@@ -96,7 +96,7 @@ attr_mudado = attr_mudado.iloc[0:5]
 
 
 grafico = px.pie(attr_mudado, names=attr_mudado.index, values=attr_mudado.values,
-                 title=f'Tipos de acidente - {ano}', height=420)
+                 title=f'Tipos de acidentes - {ano}', height=420)
 
 
 meteorologia_e_classificacao = df.groupby('condicao_metereologica')[
