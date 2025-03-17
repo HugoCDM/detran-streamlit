@@ -67,7 +67,7 @@ classificacao_por_tipo_acidente_colunas = classificacao_por_tipo_acidente_coluna
 
 
 frequencia_classificacao_acidente = px.pie(classificacao_por_tipo_acidente_colunas, names='classificacao_acidente',
-                                           values='qtd', title=f"Gráfico de Classificação de acidentes - {ano}", height=400)
+                                           values='qtd', title=f"Classificação de acidentes - {ano}", height=400)
 
 df = df[df['tipo_pista'].isin(['Simples', 'Dupla'])]
 
@@ -78,7 +78,7 @@ df['horario'] = df['horario'].dt.hour
 horario_tipo_pista = df.groupby(
     ['horario', 'tipo_pista']).size().reset_index(name='quantidade')
 horario_tipo_pista_bar = px.bar(horario_tipo_pista, x='horario', y='quantidade', color='tipo_pista',
-                                barmode='group', text_auto=True, title=f'Gráfico dos tipos de pistas pelos Horários e Quantidade - {ano}', height=750)
+                                barmode='group', text_auto=True, title=f'Tipos de pistas pelos Horários e Quantidade - {ano}', height=750)
 
 
 frequencia_acidentes = df['tipo_acidente_frequencia'] = (
@@ -96,7 +96,7 @@ attr_mudado = attr_mudado.iloc[0:5]
 
 
 grafico = px.pie(attr_mudado, names=attr_mudado.index, values=attr_mudado.values,
-                 title=f'Gráfico dos Tipos de acidente - {ano}', height=420)
+                 title=f'Tipos de acidente - {ano}', height=420)
 
 
 meteorologia_e_classificacao = df.groupby('condicao_metereologica')[
@@ -106,7 +106,7 @@ meteorologia_e_classificacao = meteorologia_e_classificacao.replace(
 meteorologia_e_classificacao = meteorologia_e_classificacao[meteorologia_e_classificacao['classificacao_acidente'].isin(
     ['Com Vítimas Feridas', 'Sem Vítimas', 'Com Vítimas Fatais'])]
 meteorologia_e_classificacao_line = px.line(meteorologia_e_classificacao, x='condicao_metereologica', y='quantidade_acidentes',
-                                            color='classificacao_acidente',  title=f'Gráfico da Condição Meteorológica pela Classificação e Quantidade de acidentes - {ano}', height=836)
+                                            color='classificacao_acidente',  title=f'Condição Meteorológica pela Classificação e Quantidade de acidentes - {ano}', height=836)
 meteorologia_e_classificacao_line.update_layout(legend=dict(title=None))
 #
 #
